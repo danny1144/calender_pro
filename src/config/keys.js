@@ -1,0 +1,4 @@
+let JUHE_APP_KEY = '7f56f684f00e861a1e393a1027eeff03'
+export {
+    JUHE_APP_KEY
+}
