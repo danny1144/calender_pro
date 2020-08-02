@@ -1,11 +1,12 @@
 import {
-    axiosPost
+    axiosPost,mockGet
 } from '../libs/http'
 
 function getDayData(date) {
     return new Promise((resolve, reject) => {
-        axiosPost({
-            url: '/api/calendar/day',
+        mockGet({
+            // url: '/api/calendar/day',
+            url:'/mock/day.json',
             data: {
                 date
             },
@@ -17,12 +18,15 @@ function getDayData(date) {
             }
 
         })
+
+        
     })
 }
 function getMonthData(date) {
     return new Promise((resolve, reject) => {
-        axiosPost({
-            url: '/api/calendar/month',
+        mockGet({
+            // url: '/api/calendar/month',
+            url:'/mock/month.json',
             data: {
                 "year-month": date
             },
@@ -38,8 +42,9 @@ function getMonthData(date) {
 }
 function getYearData(year) {
     return new Promise((resolve, reject) => {
-        axiosPost({
-            url: '/api/calendar/year',
+        mockGet({
+            // url: '/api/calendar/year',
+            url:'/mock/year.json',
             data: {
                 year
             },

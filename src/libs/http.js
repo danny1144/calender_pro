@@ -35,7 +35,19 @@ function axiosGet(options) {
         })
 }
 
+function mockGet(options) {
+    axios(options.url)
+        .then((res) => {
+            options.success(res.data)
+        })
+        .catch((err) => {
+            options.error(err)
+        })
+}
+
+
 export {
     axiosGet,
-    axiosPost
+    axiosPost,
+    mockGet
 }

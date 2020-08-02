@@ -22,10 +22,18 @@
      },
      // 为开发服务器配置自定义代理规则。
      proxy: {
-         '/api': {
-             target: 'http://v.juhe.cn/',
-             changeOrigin: true,
-             rewrite: path => path.replace(/\/api/, '')
-         },
+        '/api': {
+            target: 'http://v.juhe.cn/',
+            changeOrigin: true,
+            rewrite: path => path.replace(/\/api/, '')
+        },
+        '/mock': {
+            target: 'http://127.0.0.1:8080/',
+            changeOrigin: true,
+            rewrite: path => path.replace(/\/mock/, '')
+        },
+
+
+
      }
  }

@@ -45,9 +45,5 @@ export default async (store, field, date) => {
             res = mapForChsDate(res, 'startday')
             break
     }
-    store.commit('setData', {
-        field,
-        data
-    })
 
 }
