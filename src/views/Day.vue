@@ -5,7 +5,7 @@
 </template>
 <script>
 import getData from "../service";
-import DayCard from "/@/components/Card/index.vue";
+import DayCard from "/@/components/DayCard/index.vue";
 import { onMounted } from "vue";
 import { useStore } from "vuex";
 export default {

@@ -18,6 +18,18 @@ fastClick.attach(document.body)
 
 ```
 
-##  watch
+- 整体展示
+  - 当日
+    -  card
+       - weekday(周几) lunar农历  date(具体日期)
+    - list
+       - year-month当前年月 animalsYear今年属相 lunarYear农历年名 suit适宜事件 avoid避免事件 
+  - 近期
+    -  card
+       -  name节日 festival放假日 desc假期描述 rest拼假建议 
+  - 当年
+    -  card
+       -  name 节日 startday开始时间  
 
-
+**矢量库**
+https://www.iconfont.cn/search/index?searchType=icon&q=calendar
