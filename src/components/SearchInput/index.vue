@@ -1,6 +1,7 @@
 <template>
   <div class="search-wrap">
-    <input class="input is-primary" 
+    <input
+      class="input is-primary"
       type="text"
       :placeholder="placeholder"
       :maxlength="maxlength"
@@ -12,6 +13,7 @@
 
 <script>
 import { ref } from "vue";
+import { useStore } from 'vuex';
 export default {
   name: "SearchInput",
   props: {
@@ -19,8 +21,11 @@ export default {
     maxlength: Number,
   },
   setup() {
+    const store=useStore(),
+    state =store.state,
     const inputValue = ref("");
     const searchData = (e) => {
+      console.log(e.target.value)
     };
     return {
       searchData,

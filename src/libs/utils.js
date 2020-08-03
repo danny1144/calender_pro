@@ -27,7 +27,6 @@ function formatChsDate(date, type) {
             return `${_arr[0]}年`
         default:
             return `${_arr[0]}年${_arr[1]}月${_arr[2]}日`
-
     }
 
 }
@@ -37,7 +36,6 @@ function mapForChsDate(date, key) {
         item[key] = formatChsDate(item[key])
         return item
     })
-
 }
 
 function getNowDate(filed) {

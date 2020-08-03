@@ -65,7 +65,7 @@ export default {
             case 'month':
                 state.monthData = data
                 break
-            case 'month':
+            case 'year':
                 state.yearData = data
                 break
             default:

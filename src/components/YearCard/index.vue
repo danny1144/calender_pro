@@ -12,6 +12,7 @@
     </div>
   </div>
 </template>
+
 <script>
 export default {
   name: "YearCard",
@@ -22,5 +23,6 @@ export default {
   setup() {},
 };
 </script>
+
 <style lang="scss" scoped>
 </style>
