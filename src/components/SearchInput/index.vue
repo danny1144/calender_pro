@@ -21,8 +21,6 @@ export default {
   setup() {
     const inputValue = ref("");
     const searchData = (e) => {
-
-
     };
     return {
       searchData,

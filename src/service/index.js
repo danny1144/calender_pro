@@ -34,7 +34,7 @@ export default async (store, field, date) => {
         case 'day':
             res = data.result.data
             res.date = formatChsDate(res.date, 'day')
-            res['year-month'] = formatChsDate(res['year-month'], 'month')
+            res['yearMonth'] = formatChsDate(res['year-month'], 'month')
             break
         case 'month':
             res = data.result.data.holiday_array
@@ -45,5 +45,8 @@ export default async (store, field, date) => {
             res = mapForChsDate(res, 'startday')
             break
     }
-
+    store.commit('setData',{
+        field,
+        data:res
+    })
 }

@@ -19,13 +19,12 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-
-.router-link-active{
-  .heading{
+.router-link-active {
+  .heading {
     color: #ed4940;
   }
-  .title{
-    color:orangered
+  .title {
+    color: orangered;
   }
 }
 </style>

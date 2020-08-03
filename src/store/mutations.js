@@ -52,6 +52,25 @@ export default {
     },
     setErrorCode: (state, errorCode) => {
         state.error_code = errorCode
+    },
+    setData(state, payload) {
+        const {
+            field,
+            data
+        } = payload
+        switch (field) {
+            case 'day':
+                state.dayData = data
+                break
+            case 'month':
+                state.monthData = data
+                break
+            case 'month':
+                state.yearData = data
+                break
+            default:
+                break
+        }
     }
 
 
