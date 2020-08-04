@@ -13,7 +13,7 @@
 
 <script>
 import { ref } from "vue";
-import { useStore } from 'vuex';
+import { useStore } from "vuex";
 export default {
   name: "SearchInput",
   props: {
@@ -21,11 +21,11 @@ export default {
     maxlength: Number,
   },
   setup() {
-    const store=useStore(),
-    state =store.state,
-    const inputValue = ref("");
+    const store = useStore(),
+      state = store.state,
+      inputValue = ref("");
     const searchData = (e) => {
-      console.log(e.target.value)
+      console.log(e.target.value);
     };
     return {
       searchData,

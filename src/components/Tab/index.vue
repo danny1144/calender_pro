@@ -1,8 +1,10 @@
 <template>
-  <div class="level is-mobile myTab">
-    <div v-for="(item,index) of tabData" :key="index">
-      <tab-icon :iconText="item.iconText" :path="item.path" :textTab="item.textTab"></tab-icon>
-    </div>
+  <div class="tabs is-toggle is-fullwidth">
+    <ul>
+      <li v-for="(item,index) of tabData" :key="index">
+        <tab-icon :iconText="item.iconText" :path="item.path" :textTab="item.textTab"></tab-icon>
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -31,15 +33,5 @@ export default {
   },
 };
 </script>
-
 <style lang="scss">
-.myTab {
-  display: flex;
-  flex-direction: row;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  width: 100%;
-}
 </style>

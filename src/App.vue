@@ -1,10 +1,8 @@
 <template>
-  <div id="app">
-    <my-header>{{headerTitle}}</my-header>
-    <search-wrap :placeholder="placeholder" :maxlength="maxlength"></search-wrap>
-    <tab></tab>
-    <router-view></router-view>
-  </div>
+  <my-header>{{headerTitle}}</my-header>
+  <search-wrap :placeholder="placeholder" :maxlength="maxlength"></search-wrap>
+  <tab></tab>
+  <router-view></router-view>
 </template>
 
 <script>
@@ -25,7 +23,7 @@ export default {
     const store = useStore(),
       state = store.state,
       router = useRouter();
-      router.push('/')
+    router.push("/");
     watch(
       () => {
         console.log(router.currentRoute.value.name);

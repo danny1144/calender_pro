@@ -36,7 +36,7 @@ function mapForChsDate(date, key) {
         item[key] = formatChsDate(item[key])
         return item
     })
-}
+}``
 
 function getNowDate(filed) {
     const date = new Date(),
